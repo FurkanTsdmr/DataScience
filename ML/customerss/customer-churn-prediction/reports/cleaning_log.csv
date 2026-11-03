@@ -1,0 +1,18 @@
+adim,sutun,etkilenen,aciklama
+baslangic,-,1820,ham satır sayısı
+kategori_standardizasyonu,region,7,büyük/küçük harf-boşluk düzeltildi
+kategori_standardizasyonu,plan,8,büyük/küçük harf-boşluk düzeltildi
+kategori_standardizasyonu,contract_type,7,büyük/küçük harf-boşluk düzeltildi
+kategori_standardizasyonu,payment_method,7,büyük/küçük harf-boşluk düzeltildi
+aralik_disi_deger,age,6,"geçerli aralık [18, 100] dışı -> NaN"
+aralik_disi_deger,monthly_usage_hours,4,"geçerli aralık [0, 100] dışı -> NaN"
+aralik_disi_deger,satisfaction_score,2,"geçerli aralık [1, 10] dışı -> NaN"
+ucret_birim_temizleme,monthly_fee_tl,1,'399TL' -> 399.0
+ucret_metin_hatasi,monthly_fee_tl,6,"sayıya çevrilemeyen metin -> NaN: ?, error, four hundred, free, unknown, —"
+aralik_disi_deger,monthly_fee_tl,4,"ücret (0, 1000] dışı -> NaN"
+plan_ucret_celiskisi,plan,5,plan etiketi ücret/indirimle çelişiyor -> plan ücretten türetildi (varsayım)
+ucret_kuraldan_sapma_duzeltildi,monthly_fee_tl,1,1787 geçerli ücretten kuraldan sapanlar kuralla değiştirildi
+ucret_kuralla_geri_kazanim,monthly_fee_tl,33,eksik/geçersiz ücret = plan fiyatı x (1-indirim) ile dolduruldu
+birebir_tekrar_silindi,tum_satir,12,ilk kayıt tutuldu
+cakisan_id_ikinci_kayit_silindi,customer_id,8,8 müşteri için ilk kayıt tutuldu (varsayım)
+son,-,1800,temiz satır sayısı

@@ -1,0 +1,21 @@
+# Bu sürümlerle test edildi (Python 3.12). Model dosyası (joblib) scikit-learn sürümüne duyarlıdır:
+# farklı sürümde yüklenemezse `python -m src.train` ile modeli yeniden üretin.
+pandas==3.0.2
+numpy==2.4.4
+scipy==1.17.1
+statsmodels==0.15.0
+scikit-learn==1.8.0
+matplotlib==3.10.8
+seaborn==0.13.2
+joblib==1.5.3
+fastapi==0.162.0
+uvicorn==0.54.0
+pydantic==2.14.2
+streamlit==1.66.1
+httpx==0.28.1
+pytest==9.2.0
+# Notebook'ları çalıştırmak/yeniden üretmek için:
+ipykernel==7.4.0
+nbformat==5.11.1
+nbclient==0.11.0
+nbconvert==7.17.2

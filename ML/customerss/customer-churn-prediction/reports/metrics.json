@@ -1,0 +1,84 @@
+{
+  "n_total": 1800,
+  "n_train": 1440,
+  "n_test": 360,
+  "churn_rate_total": 0.08222222222222222,
+  "churn_train": 118,
+  "churn_test": 30,
+  "selected_model": "Logistic Regression",
+  "feature_set": "core",
+  "cv_selected": {
+    "pr_auc": 0.26741148069959575,
+    "pr_auc_std": 0.06656411078694723,
+    "roc_auc": 0.7479448979472052,
+    "roc_auc_std": 0.050278092078486186,
+    "brier": 0.06938353798963857
+  },
+  "threshold": 0.1,
+  "oof_at_threshold": {
+    "threshold": 0.1,
+    "flagged": 398,
+    "flagged_pct": 0.2763888888888889,
+    "precision": 0.17587939698492464,
+    "recall": 0.5932203389830508,
+    "f1": 0.2713178294573643,
+    "f2": 0.40229885057471265,
+    "tn": 994,
+    "fp": 328,
+    "fn": 48,
+    "tp": 70
+  },
+  "test_ranking": {
+    "roc_auc": 0.7148484848484848,
+    "pr_auc": 0.1639277258641932,
+    "brier": 0.07524212727722787
+  },
+  "test_at_threshold": {
+    "threshold": 0.1,
+    "flagged": 110,
+    "flagged_pct": 0.3055555555555556,
+    "precision": 0.16363636363636364,
+    "recall": 0.6,
+    "f1": 0.2571428571428571,
+    "f2": 0.391304347826087,
+    "tn": 238,
+    "fp": 92,
+    "fn": 12,
+    "tp": 18,
+    "net_value_tl": 2961.511999999999
+  },
+  "test_baseline_dummy": {
+    "roc_auc": 0.5,
+    "pr_auc": 0.08333333333333333,
+    "brier": 0.07639081790123455,
+    "accuracy_predict_all_zero": 0.9166666666666666
+  },
+  "test_bootstrap_ci_95": {
+    "roc_auc": {
+      "low": 0.6207,
+      "median": 0.7154,
+      "high": 0.8046
+    },
+    "pr_auc": {
+      "low": 0.1059,
+      "median": 0.1745,
+      "high": 0.2728
+    },
+    "precision": {
+      "low": 0.0971,
+      "median": 0.1636,
+      "high": 0.2403
+    },
+    "recall": {
+      "low": 0.4211,
+      "median": 0.6,
+      "high": 0.7778
+    }
+  },
+  "assumptions": {
+    "offer_cost_tl": 50.0,
+    "offer_success_rate": 0.3,
+    "customer_value_months": 12,
+    "margin": 0.4
+  }
+}

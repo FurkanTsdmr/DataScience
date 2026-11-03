@@ -1,0 +1,71 @@
+{
+  "trained_at_utc": "2026-11-03T05:12:14+00:00",
+  "model": "Logistic Regression",
+  "hyperparameters": {
+    "C": 3
+  },
+  "feature_set": "core",
+  "required_inputs": [
+    "tenure_months",
+    "satisfaction_score",
+    "complaints_6m",
+    "support_calls_6m",
+    "contract_type"
+  ],
+  "optional_inputs": [
+    "age",
+    "region",
+    "device_type",
+    "plan",
+    "monthly_usage_hours",
+    "monthly_fee_tl",
+    "discount_rate",
+    "payment_method",
+    "late_payments_6m"
+  ],
+  "threshold": 0.1,
+  "medium_threshold": 0.05,
+  "assumptions": {
+    "offer_cost_tl": 50.0,
+    "offer_success_rate": 0.3,
+    "customer_value_months": 12,
+    "margin": 0.4
+  },
+  "versions": {
+    "python": "3.12.3",
+    "scikit-learn": "1.8.0",
+    "pandas": "3.0.2",
+    "numpy": "2.4.4"
+  },
+  "categorical_levels": {
+    "region": [
+      "Aegean",
+      "Black Sea",
+      "Central Anatolia",
+      "Eastern Anatolia",
+      "Marmara",
+      "Mediterranean"
+    ],
+    "device_type": [
+      "Desktop",
+      "Mobile",
+      "Tablet"
+    ],
+    "plan": [
+      "Basic",
+      "Premium",
+      "Standard"
+    ],
+    "contract_type": [
+      "Annual",
+      "Monthly",
+      "Two-Year"
+    ],
+    "payment_method": [
+      "Bank Transfer",
+      "Cash",
+      "Credit Card",
+      "E-Wallet"
+    ]
+  }
+}

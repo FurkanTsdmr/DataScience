@@ -1,0 +1,17 @@
+﻿column,type,description
+customer_id,string,Müşteri kimliği; modele doğrudan verme
+age,numeric,Yaş; beklenen aralık 18-100
+region,categorical,Bölge
+device_type,categorical,En çok kullanılan cihaz
+plan,categorical,Basic / Standard / Premium
+contract_type,categorical,Monthly / Annual / Two-Year
+tenure_months,numeric,"Abonelik süresi (ay), 1-72"
+monthly_usage_hours,numeric,Aylık kullanım saati; makul aralık 0-100
+monthly_fee_tl,numeric,"Aylık ücret (TL), pozitif olmalı"
+discount_rate,numeric,"İndirim oranı, 0-0.20"
+payment_method,categorical,Ödeme yöntemi
+late_payments_6m,numeric,Son 6 ay gecikmiş ödeme adedi
+support_calls_6m,numeric,Son 6 ay destek araması adedi
+complaints_6m,numeric,Son 6 ay şikâyet adedi
+satisfaction_score,numeric,"Memnuniyet puanı, 1-10"
+churn,binary target,"Ayrıldı mı? 1=Evet, 0=Hayır; hedef"
